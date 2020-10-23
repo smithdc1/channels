@@ -35,6 +35,7 @@ jobs:
       - name: print dir
         run: |
           ls -a
+          pwd
           coverage report
       - name: Upload coverage result for ${{ matrix.python-version }}
         uses: actions/upload-artifact@v2
