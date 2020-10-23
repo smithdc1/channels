@@ -24,7 +24,7 @@ setup(
             "pytest-asyncio",
             "async_generator",
             "async-timeout",
-            "coverage~=4.5",
+            "coverage~=5.3",
         ],
     },
     classifiers=[
