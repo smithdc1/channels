@@ -32,6 +32,9 @@ jobs:
         run: |
           ENV_PREFIX=$(tr -C -d "0-9" <<< "${{ matrix.python-version }}")
           TOXENV=$(tox --listenvs | grep "^py$ENV_PREFIX" | tr '\n' ',') python -m tox
+      - name: print dir
+        run: |
+          ls
       - name: Upload coverage result for ${{ matrix.python-version }}
         uses: actions/upload-artifact@v2
         with:
