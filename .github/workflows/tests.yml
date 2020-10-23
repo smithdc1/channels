@@ -34,7 +34,7 @@ jobs:
           TOXENV=$(tox --listenvs | grep "^py$ENV_PREFIX" | tr '\n' ',') python -m tox
       - name: print dir
         run: |
-          ls
+          ls -a
           coverage report
       - name: Upload coverage result for ${{ matrix.python-version }}
         uses: actions/upload-artifact@v2
