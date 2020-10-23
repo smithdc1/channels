@@ -69,7 +69,7 @@ jobs:
         coverage report
         coverage html
     - name: Upload coverage
-    - uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v2
       with:
         name: Coverage Report
         path: coverage_html/
