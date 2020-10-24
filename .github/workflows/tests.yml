@@ -65,6 +65,7 @@ jobs:
       - name: Report Coverage
         run: |
           python -m pip install coverage
+          ls -R
           coverage combine --append 3.6 3.7 3.8
           coverage report
           coverage html
